@@ -58,6 +58,8 @@
         <div>
             <asp:Button ID="KonvButton" runat="server" Text="Konvertera" OnClick="KonvButton_Click" />
         </div>
+        <%-- Tabell --%>
+        <asp:Table ID="Table" runat="server" Visible="false"></asp:Table>
     </div>
     </form>
 </body>
