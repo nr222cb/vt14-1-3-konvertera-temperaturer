@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using KonverteraTemperaturer.Model;
 
 namespace KonverteraTemperaturer
 {
@@ -16,7 +17,13 @@ namespace KonverteraTemperaturer
 
         protected void KonvButton_Click(object sender, EventArgs e)
         {
+            if (IsValid)
+            {
+                var startT = int.Parse(StartTemp.Text);
+                var slutT = int.Parse(SlutTemp.Text);
 
+                var testC2F = TemperatureConverter.CelsiusToFahrenheit(startT);
+            }
         }
     }
 }
