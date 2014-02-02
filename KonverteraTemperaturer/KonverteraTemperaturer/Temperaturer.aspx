@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv">
 <head runat="server">
     <title>Konvertera temperaturer</title>
+    <link rel="stylesheet" type="text/css" href="Content/StyleSheet.css"/>
 </head>
 <body>
     <form id="form1" runat="server" defaultbutton="KonvButton">
@@ -55,7 +56,7 @@
             <asp:RadioButton ID="F2C" runat="server" GroupName="KonvTyp" Text="Fahrenheit till Celsius" />
         </div>
         <%-- Konvertera-knapp --%>
-        <div>
+        <div id="knapp">
             <asp:Button ID="KonvButton" runat="server" Text="Konvertera" OnClick="KonvButton_Click" />
         </div>
         <%-- Tabell --%>
